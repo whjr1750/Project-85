@@ -86,7 +86,7 @@ function down()
 
 function left()
 {
-	if(greencar_x <0)
+	if(greencar_x >0) //updated condition here 
 	{
 		greencar_x = greencar_x - 10;
 		console.log("When left arrow is pressed x = " + greencar_x + " | y = " + greencar_y);
@@ -97,7 +97,7 @@ function left()
 
 function right()
 {
-	if(greencar_x >=700)
+	if(greencar_x <=700) //updated condition here 
 	{
 		greencar_x = greencar_x + 10;
 		console.log("When right arrow is pressed x = " + greencar_x + " | y = " + greencar_y);
